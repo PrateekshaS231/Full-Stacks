@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitnessHub | Smart Wellness Center</title>
+  <meta name="description" content="Premium smart fitness and wellness center website with programs, trainers, plans, gallery, and contact details." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <span>Special offer: Join now and get 30% off the first 3 months.</span>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="index.html">FitnessHub</a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <article class="hero-copy" data-animate>
+          <p class="badge">Smart Fitness & Wellness</p>
+          <h1>Train smarter. Live stronger.</h1>
+          <p class="lead">Join a premium wellness center with expert coaching, structured programs, nutrition support, and personalized training plans that fit your lifestyle.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="membership.html">Join Now</a>
+            <a class="btn btn-secondary" href="programs.html">Explore Programs</a>
+          </div>
+          <div class="mini-stats">
+            <div><strong>12k+</strong><span>Members</span></div>
+            <div><strong>94%</strong><span>Retention</span></div>
+            <div><strong>24/7</strong><span>Access</span></div>
+          </div>
+        </article>
+
+        <aside class="hero-card glass-card" data-animate>
+          <div class="offer-card">
+            <h3>Live Challenge</h3>
+            <p>12-week transformation camp with nutrition, strength sessions, and live coach guidance.</p>
+            <div class="countdown" id="countdown"></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats-section container">
+      <div class="stats-grid">
+        <article class="stat-card glass-card" data-animate>
+          <h3 class="counter" data-target="150">0</h3>
+          <p>Weekly classes</p>
+        </article>
+        <article class="stat-card glass-card" data-animate>
+          <h3 class="counter" data-target="32">0</h3>
+          <p>Certified trainers</p>
+        </article>
+        <article class="stat-card glass-card" data-animate>
+          <h3 class="counter" data-target="6800">0</h3>
+          <p>Success stories</p>
+        </article>
+        <article class="stat-card glass-card" data-animate>
+          <h3 class="counter" data-target="49">0</h3>
+          <p>Client satisfaction</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading" data-animate>
+        <p class="badge">Featured Programs</p>
+        <h2>Everything you need to stay on track</h2>
+      </div>
+      <div class="card-grid services-grid">
+        <article class="feature-card glass-card" data-animate>
+          <h3>Strength Coaching</h3>
+          <p>Progressive strength plans tailored for beginner, intermediate, and advanced athletes.</p>
+        </article>
+        <article class="feature-card glass-card" data-animate>
+          <h3>Yoga Flow</h3>
+          <p>Breath-led mindfulness sessions improving mobility, calmness, and balance.</p>
+        </article>
+        <article class="feature-card glass-card" data-animate>
+          <h3>Nutrition Plans</h3>
+          <p>Custom meal planning with coach support, smart macros, and effective routines.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section accent-section">
+      <div class="container testimonial-wrap">
+        <div class="section-heading" data-animate>
+          <p class="badge">Success Stories</p>
+          <h2>Members who transformed their life</h2>
+        </div>
+        <div class="testimonial-slider" data-animate>
+          <article class="testimonial active">
+            <p>“I lost 18 kg, built strength, and finally found a routine I can sustain.”</p>
+            <strong>Rina S.</strong>
+          </article>
+          <article class="testimonial">
+            <p>“The trainers and nutrition support make every day feel achievable.”</p>
+            <strong>Arjun P.</strong>
+          </article>
+          <article class="testimonial">
+            <p>“Premium experience, great community, and results that actually last.”</p>
+            <strong>Meera K.</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading" data-animate>
+        <p class="badge">Why Choose Us</p>
+        <h2>Performance-driven wellness ecosystem</h2>
+      </div>
+      <div class="bmi-layout">
+        <aside class="calculator glass-card" data-animate>
+          <h3>BMI Calculator</h3>
+          <label for="weight">Weight (kg)</label>
+          <input type="number" id="weight" placeholder="70" required />
+          <label for="height">Height (cm)</label>
+          <input type="number" id="height" placeholder="170" required />
+          <button class="btn btn-primary" id="calculateBmi" type="button">Calculate BMI</button>
+          <div id="bmiResult" class="result-box">Your BMI result will appear here.</div>
+        </aside>
+
+        <article class="progress-panel glass-card" data-animate>
+          <h3>Member Progress</h3>
+          <div class="progress-block"><span>Cardio</span><div class="progress-bar"><span style="width:85%"></span></div></div>
+          <div class="progress-block"><span>Strength</span><div class="progress-bar"><span style="width:72%"></span></div></div>
+          <div class="progress-block"><span>Mobility</span><div class="progress-bar"><span style="width:90%"></span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container faq-section">
+      <div class="section-heading" data-animate>
+        <p class="badge">FAQs</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq-list">
+        <article class="faq-item glass-card" data-animate>
+          <button class="faq-question" type="button">Do you offer beginner-friendly programs?</button>
+          <div class="faq-answer"><p>Yes, each plan starts with a movement assessment and beginner-friendly coaching sessions.</p></div>
+        </article>
+        <article class="faq-item glass-card" data-animate>
+          <button class="faq-question" type="button">Can I switch plans anytime?</button>
+          <div class="faq-answer"><p>Absolutely. You can upgrade, downgrade, or pause your membership according to your goals.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading" data-animate>
+        <p class="badge">Watch & Learn</p>
+        <h2>Workout inspiration</h2>
+      </div>
+      <div class="video-wrap" data-animate>
+        <iframe src="https://www.youtube.com/embed/8D6R7B8A8X0?si=4nl87lrJ6D0_6CFY" title="Workout video" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>FitnessHub</h3>
+        <p>Smart training, mindful recovery, and lasting results.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter email" required />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="copyright">© 2026 FitnessHub. All rights reserved.</div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

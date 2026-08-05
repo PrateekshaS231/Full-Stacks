@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membership | FitnessHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="index.html">FitnessHub</a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a class="active" href="membership.html">Membership</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="badge">Membership Plans</p>
+        <h1>Flexible plans for every level</h1>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="card-grid pricing-grid">
+        <article class="price-card glass-card" data-animate>
+          <h3>Basic</h3>
+          <p class="price">₹1,499<span>/mo</span></p>
+          <ul>
+            <li>Gym access</li>
+            <li>2 group classes</li>
+            <li>Coach check-in</li>
+          </ul>
+          <button class="btn btn-primary" type="button">Join</button>
+        </article>
+        <article class="price-card popular glass-card" data-animate>
+          <span class="popular-badge">Popular</span>
+          <h3>Standard</h3>
+          <p class="price">₹2,799<span>/mo</span></p>
+          <ul>
+            <li>Unlimited gym access</li>
+            <li>All classes</li>
+            <li>Personal trainer session</li>
+          </ul>
+          <button class="btn btn-primary" type="button">Join</button>
+        </article>
+        <article class="price-card glass-card" data-animate>
+          <h3>Premium</h3>
+          <p class="price">₹4,499<span>/mo</span></p>
+          <ul>
+            <li>All standard features</li>
+            <li>Nutrition coaching</li>
+            <li>Online fitness tracking</li>
+          </ul>
+          <button class="btn btn-primary" type="button">Join</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="membership-calculator glass-card" data-animate>
+        <h2>Membership Price Calculator</h2>
+        <div class="calculator-grid">
+          <label for="planSelect">Choose plan</label>
+          <select id="planSelect">
+            <option value="1499">Basic</option>
+            <option value="2799">Standard</option>
+            <option value="4499">Premium</option>
+          </select>
+
+          <label for="monthsInput">Number of months</label>
+          <input id="monthsInput" type="number" min="1" max="24" value="3" />
+
+          <button id="calculateMembership" class="btn btn-primary" type="button">Calculate Total</button>
+          <div id="membershipResult" class="result-box">Your total will appear here.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="glass-card comparison-card" data-animate>
+        <h2>Plan Comparison</h2>
+        <table class="comparison-table">
+          <thead>
+            <tr><th>Feature</th><th>Basic</th><th>Standard</th><th>Premium</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Gym Access</td><td>✔</td><td>✔</td><td>✔</td></tr>
+            <tr><td>Class Access</td><td>2</td><td>Unlimited</td><td>Unlimited</td></tr>
+            <tr><td>Diet Plan</td><td>✘</td><td>Optional</td><td>✔</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>FitnessHub</h3><p>Smart training, mindful recovery, and lasting results.</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Newsletter</h4><form class="newsletter-form"><input type="email" placeholder="Enter email" required /><button class="btn btn-primary" type="submit">Subscribe</button></form></div>
+    </div>
+    <div class="copyright">© 2026 FitnessHub. All rights reserved.</div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

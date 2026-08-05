@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | FitnessHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="index.html">FitnessHub</a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="badge">Contact Us</p>
+        <h1>Start your wellness journey today</h1>
+      </div>
+    </section>
+
+    <section class="section container contact-layout">
+      <form class="contact-form glass-card" data-animate>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your full name" required minlength="3" maxlength="40" />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="name@example.com" required />
+
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" placeholder="9876543210" pattern="[0-9]{10}" required />
+
+        <label for="age">Age</label>
+        <input id="age" type="number" min="18" max="80" placeholder="28" required />
+
+        <fieldset>
+          <legend>Choose your goal</legend>
+          <label><input type="radio" name="goal" value="weight-loss" required /> Weight loss</label>
+          <label><input type="radio" name="goal" value="muscle-gain" /> Muscle gain</label>
+          <label><input type="radio" name="goal" value="recovery" /> Yoga recovery</label>
+        </fieldset>
+
+        <label for="goal">Program interest</label>
+        <select id="goal" required>
+          <option value="">Select one</option>
+          <option>Weight loss</option>
+          <option>Muscle gain</option>
+          <option>Yoga recovery</option>
+        </select>
+
+        <label for="date">Preferred visit date</label>
+        <input id="date" type="date" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Tell us your fitness goals" required minlength="10"></textarea>
+
+        <label><input type="checkbox" required /> I agree to be contacted.</label>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+
+      <aside class="glass-card" data-animate>
+        <h2>Visit Us</h2>
+        <p>123 Wellness Avenue, Bengaluru, India</p>
+        <p>Open Monday - Sunday, 6:00 AM - 10:00 PM</p>
+        <iframe class="map-frame" src="https://www.google.com/maps?q=Bengaluru&z=12&output=embed" title="Google Map embed"></iframe>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid"><div><h3>FitnessHub</h3><p>Smart training, mindful recovery, and lasting results.</p></div><div><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h4>Newsletter</h4><form class="newsletter-form"><input type="email" placeholder="Enter email" required /><button class="btn btn-primary" type="submit">Subscribe</button></form></div></div>
+    <div class="copyright">© 2026 FitnessHub. All rights reserved.</div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
