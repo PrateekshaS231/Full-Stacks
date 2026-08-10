@@ -1,0 +1,273 @@
+.announcementBar {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  background: #c9aa7b;
+}
+
+.announcementBar__badge {
+  flex: 0 0 auto;
+  background: #b8935a;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.marqueeWrapper {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marqueeContent {
+  display: inline-block;
+  animation: scrollLeft 18s linear infinite;
+}
+
+.marqueeContent span {
+  display: inline-block;
+  padding-right: 3rem;
+}
+
+.marqueeWrapper:hover .marqueeContent {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.announcementBar__message {
+  display: none;
+}
+
+.mainNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+  min-height: 80px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.logoBlock {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  min-width: 300px;
+}
+
+.logoIcon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.logoTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a2340;
+}
+
+.logoTagline {
+  font-size: 12px;
+  font-style: italic;
+  color: #666666;
+}
+
+.logoCaption {
+  font-size: 9px;
+  letter-spacing: 0.5px;
+  color: #888888;
+  text-transform: uppercase;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: nowrap;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navItem {
+  white-space: nowrap;
+}
+
+.navLink {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: #b8935a;
+}
+
+.chevronIcon {
+  width: 10px;
+  height: 6px;
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.applyButton {
+  border: none;
+  cursor: pointer;
+  background: #c9963e;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 10px 24px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.applyButton:hover {
+  background: #ac8033;
+}
+
+.searchButton {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #4b5563;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.searchButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.hamburger {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  border-radius: 999px;
+  background: #4b5563;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .mainNav {
+    padding: 12px 24px;
+  }
+
+  .navMenu {
+    display: none;
+    width: 100%;
+  }
+
+  .navMenu--open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    margin-top: 18px;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 18px;
+  }
+
+  .navItem {
+    padding: 0 4px;
+  }
+
+  .hamburger {
+    display: inline-flex;
+  }
+
+  .navActions {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 680px) {
+  .mainNav {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 12px 18px;
+  }
+
+  .logoBlock {
+    min-width: 240px;
+  }
+
+  .logoTitle {
+    font-size: 16px;
+  }
+
+  .logoTagline,
+  .logoCaption {
+    font-size: 11px;
+  }
+
+  .announcementBar__message,
+  .announcementBar__badge {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+
+  .applyButton {
+    padding: 10px 18px;
+  }
+}
